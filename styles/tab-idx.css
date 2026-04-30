@@ -35,7 +35,7 @@
 .syslog{color:#4D2000;font-size:13px;line-height:1.7;margin-top:16px;padding-top:12px;border-top:1px dashed #331500}
 .blink{animation:bl 1.1s step-end infinite}
 @keyframes bl{0%,100%{opacity:1}50%{opacity:0}}
-.fkbar{border-top:1px solid #FF6600;display:flex;background:#000;z-index:11}
+.fkbar{border-bottom:1px solid #FF6600;display:flex;background:#000;z-index:11}
 .fk{flex:1;border-right:1px solid #FF6600;padding:6px 4px;text-align:center;font-size:15px;letter-spacing:1px;font-family:'VT323','Courier New',monospace;cursor:pointer}
 .fk:last-child{border-right:none}
 .dk{background:#331500;color:#FF6600}
