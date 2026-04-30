@@ -25,7 +25,7 @@
 .blink{animation:bl 1.1s step-end infinite}
 @keyframes bl{0%,100%{opacity:1}50%{opacity:0}}
 .fkbar{border-top:1px solid #5555FF;display:flex;background:#000;z-index:11}
-.fk{flex:1;border-right:1px solid #5555FF;padding:5px 2px;text-align:center;font-size:13px;letter-spacing:1px;font-family:'VT323','Courier New',monospace;cursor:pointer}
+.fk{flex:1;border-right:1px solid #5555FF;padding:6px 4px;text-align:center;font-size:15px;letter-spacing:1px;font-family:'VT323','Courier New',monospace;cursor:pointer}
 .fk:last-child{border-right:none}
 .dk{background:#11115C;color:#5555FF}
 .ak{background:#9999FF;color:#000}
