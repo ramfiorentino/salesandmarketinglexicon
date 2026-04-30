@@ -1,0 +1,139 @@
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+*{box-sizing:border-box;margin:0;padding:0}
+.page{background:#000;color:#FF00FF;font-family:'VT323','Courier New',monospace;width:816px;min-height:1056px;position:relative;overflow:hidden}
+.page::after{content:'';position:absolute;inset:0;background:repeating-linear-gradient(0deg,transparent,transparent 3px,rgba(15,0,15,0.2) 3px,rgba(15,0,15,0.2) 4px);pointer-events:none;z-index:10}
+.titlebar{border-bottom:1px solid #FF00FF;padding:5px 16px;display:flex;justify-content:space-between;background:#000}
+.ts{font-size:16px;color:#880088}
+.body{display:grid;grid-template-columns:1fr 1fr;gap:0}
+.ph{grid-column:1/-1;padding:8px 16px;border-bottom:1px dashed #880088}
+.col{padding:12px 14px;border-right:1px dashed #880088}
+.col:last-child{border-right:none}
+.ch-title{font-size:20px;color:#FF80FF;letter-spacing:4px}
+.ch-sub{color:#880088;font-size:15px;letter-spacing:2px}
+.intro{color:#880088;font-size:15px;line-height:1.45}
+.sr{color:#440044;font-size:14px;margin-bottom:8px}
+.st{color:#FF00FF;font-size:15px;letter-spacing:3px;margin-bottom:4px}
+.tr{margin-bottom:14px;padding-bottom:14px;border-bottom:1px dashed #280028}
+.tr:last-child{border-bottom:none;margin-bottom:0}
+.tn{color:#FF80FF;font-size:18px;line-height:1.2}
+.to{color:#440044;font-size:14px}
+.td{color:#FF00FF;font-size:16px;line-height:1.5}
+.tel{color:#440044;font-size:15px;margin-top:4px}
+.te{color:#880088;font-size:15px;line-height:1.4;padding-left:1.5ch;border-left:1px solid #440044}
+.stat{font-size:14px;color:#FF00FF}.sv{color:#FF80FF}
+.tag{background:#FF00FF;color:#000;padding:0 5px;font-size:14px}
+.fkbar{border-top:1px solid #FF00FF;display:flex;background:#000;z-index:11}
+.fk{flex:1;border-right:1px solid #FF00FF;padding:5px 2px;text-align:center;font-size:13px;letter-spacing:1px}
+.fk:last-child{border-right:none}
+.dk{background:#280028;color:#FF00FF}.ak{background:#FF80FF;color:#000}
+.blink{animation:bl 1.1s step-end infinite}
+@keyframes bl{0%,100%{opacity:1}50%{opacity:0}}
+.syslog{color:#440044;font-size:14px;line-height:1.7;margin-top:12px;padding-top:12px;border-top:1px dashed #280028}
+.closing{color:#880088;font-size:15px;line-height:1.6;margin-top:16px;padding-top:12px;border-top:1px dashed #440044}
+</style>
+<div class="page">
+<div class="titlebar">
+  <div class="ts">LEXICON@FIELDGUIDE:/CH05/METRICS_AND_MACHINERY/</div>
+  <div class="ts">[-][X]</div>
+</div>
+<div class="ph" style="display:flex;justify-content:space-between;align-items:flex-start">
+  <div>
+    <div class="ch-title">C H A P T E R &nbsp; F I V E</div>
+    <div class="ch-sub">// KNOWING WHETHER IT WORKED</div>
+  </div>
+  <div style="text-align:right">
+    <div style="color:#440044;font-size:14px;letter-spacing:2px">VOL I OF I &nbsp;·&nbsp; ADAPTED ED.</div>
+    <div style="display:flex;gap:16px;justify-content:flex-end;margin-top:4px">
+      <div class="stat">TERMS <span class="sv">08</span></div>
+      <div class="stat">STATUS <span class="sv tag">LOADED</span></div>
+      <div class="stat">CH <span class="sv">05/05</span></div>
+    </div>
+  </div>
+</div>
+<div class="ph" style="border-top:none;padding:6px 16px">
+  <div class="intro">These terms describe how you know whether what you're doing is actually working — not to turn everything into a spreadsheet, but to make better decisions with less guesswork. A metric is only useful if it points to something you can act on.</div>
+</div>
+<div class="body">
+  <div class="col">
+    <div class="st">T E R M S &nbsp; 01–04</div>
+    <div class="sr">* * * * * * * * * * * * * * * * * * * * * * *</div>
+    <div class="tr">
+      <div class="tn">What It Actually Costs to Bring Someone New In</div>
+      <div class="to">// CAC — Customer Acquisition Cost</div>
+      <div class="td">Total cost — time, money, effort — to bring in one new client or customer. Divide what you spent by the number of new people who came in. Tells you whether your current approach is sustainable.</div>
+      <div class="tel">[+] EX (consulting)</div>
+      <div class="te">If you spent forty hours on outreach and proposals over a month and brought in two clients, understanding the real cost of that acquisition helps you decide whether to invest in more passive channels instead.</div>
+    </div>
+    <div class="tr">
+      <div class="tn">What One Person Is Worth Over Time</div>
+      <div class="to">// LTV — Lifetime Value</div>
+      <div class="td">The total profit you can expect from one person across their full relationship with your work. Paired with acquisition cost, it tells you whether the economics make sense over time.</div>
+      <div class="tel">[+] EX (digital product)</div>
+      <div class="te">If most buyers of your first product eventually buy a second — and some join a recurring membership — lifetime value is much higher than the initial purchase suggests. That changes how much it's worth spending to reach them.</div>
+    </div>
+    <div class="tr">
+      <div class="tn">How Often Interest Turns Into Something Real</div>
+      <div class="to">// Win Rate / Close Rate</div>
+      <div class="td">Of all conversations or enquiries that reach a certain stage, the percentage that become actual engagements. Tracks whether your qualifying conversations are improving over time.</div>
+      <div class="tel">[+] EX (design / build)</div>
+      <div class="te">If you send ten proposals and three become projects, your close rate is 30%. Watching this over time shows whether you're consistently losing at a particular stage.</div>
+    </div>
+    <div class="tr">
+      <div class="tn">Whether Your Opening Is Doing Its Job</div>
+      <div class="to">// CTR — Click-Through Rate</div>
+      <div class="td">Clicks divided by people who saw something. Applied to a subject line, a headline, or a button — it tells you whether your opening is compelling enough to earn the next step.</div>
+      <div class="tel">[+] EX (digital product)</div>
+      <div class="te">If only 1% of recipients click through to your product page, the issue is probably the email itself — the framing, or the relevance to where people actually are.</div>
+    </div>
+  </div>
+
+  <div class="col">
+    <div class="st">T E R M S &nbsp; 05–08</div>
+    <div class="sr">* * * * * * * * * * * * * * * * * * * * * * *</div>
+    <div class="tr">
+      <div class="tn">Whether People Are Opening What You Send</div>
+      <div class="to">// Open Rate</div>
+      <div class="td">The share of people who open your email. Primarily a measure of whether your subject line and sender name are trusted and compelling enough to earn a look.</div>
+      <div class="tel">[+] EX (1-on-1 work)</div>
+      <div class="te">If your open rate drops over time, it's worth asking whether you've drifted from writing things people find genuinely useful toward writing things that serve your agenda.</div>
+    </div>
+    <div class="tr">
+      <div class="tn">Whether People Are Actually Responding</div>
+      <div class="to">// Reply Rate</div>
+      <div class="td">The share who write back. In direct outreach this is the number that matters most — it represents actual human engagement, not just passive behaviour.</div>
+      <div class="tel">[+] EX (consulting)</div>
+      <div class="te">If you send twenty outreach emails and one person replies, the question isn't whether you reached enough people — it's whether what you wrote gave someone a real reason to respond.</div>
+    </div>
+    <div class="tr">
+      <div class="tn">Which of Your Efforts Actually Led Here</div>
+      <div class="to">// Attribution</div>
+      <div class="td">The question of which touchpoint or channel deserves credit for a conversion. Always an approximation, never the full truth — but useful for knowing where to focus.</div>
+      <div class="tel">[+] EX (digital product)</div>
+      <div class="te">Someone buys after a blog post, a newsletter mention, and a follow-up email. Knowing which of those three to invest in more is what attribution tries to answer — imperfectly, but usefully.</div>
+    </div>
+    <div class="tr">
+      <div class="tn">Replacing Guesswork With a Small Honest Experiment</div>
+      <div class="to">// A/B Test</div>
+      <div class="td">Running two versions of something against each other with enough volume to see which performs better. The point: stop assuming you know what works and find out instead.</div>
+      <div class="tel">[+] EX (design / build)</div>
+      <div class="te">Testing two versions of the opening line on your contact page — one leading with process, one with outcomes — to see which generates more meaningful enquiries.</div>
+    </div>
+    <div class="syslog">
+      [+] CH05 LOADED · 08/08 TERMS · 4/4 SERVICE TYPES<br>
+      [+] ALL CHAPTERS LOADED · 61/61 TERMS TOTAL<br>
+      [+] SESSION COMPLETE
+    </div>
+    <div class="closing">
+      Sixty-one terms, arranged in five chapters. None of them will close a deal for you. Used together — with care, in the right order — they describe the shape of nearly every way of getting your work to the people who need it.<br><br>
+      Keep the ones you use.<br>
+      Ignore the rest until you need them.<br><br>
+      <span style="color:#FF80FF">END OF VOLUME · 01</span> <span class="blink" style="color:#FF00FF">_</span>
+    </div>
+  </div>
+</div>
+<div class="fkbar">
+  <div class="fk dk">F1 — HELP</div><div class="fk dk">F2 — ALL TERMS</div><div class="fk dk">F3 — CH 01</div><div class="fk dk">F4 — CH 02</div><div class="fk dk">F5 — CH 03</div><div class="fk dk">F6 — CH 04</div><div class="fk ak">F7 — CH 05</div><div class="fk dk">F10 — EXIT</div>
+</div>
+</div>

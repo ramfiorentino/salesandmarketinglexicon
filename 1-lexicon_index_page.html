@@ -1,0 +1,162 @@
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+*{box-sizing:border-box;margin:0;padding:0}
+.page{background:#000;color:#FF6600;font-family:'VT323','Courier New',monospace;width:816px;min-height:1056px;position:relative;overflow:hidden;display:flex;flex-direction:column}
+.page::after{content:'';position:absolute;inset:0;background:repeating-linear-gradient(0deg,transparent,transparent 3px,rgba(18,8,0,0.2) 3px,rgba(18,8,0,0.2) 4px);pointer-events:none;z-index:10}
+.titlebar{border-bottom:1px solid #FF6600;padding:5px 16px;display:flex;justify-content:space-between;background:#000;flex-shrink:0}
+.ts{font-size:16px;color:#803300}
+.main{flex:1;display:flex;flex-direction:column;padding:0 0 0 0}
+.hero{padding:40px 48px 24px;border-bottom:1px dashed #803300}
+.vol{color:#803300;font-size:15px;letter-spacing:4px;margin-bottom:8px}
+.big-title{color:#FF6600;font-size:52px;letter-spacing:6px;line-height:1.1;text-shadow:0 0 20px rgba(255,102,0,0.3)}
+.big-sub{color:#FF9944;font-size:26px;letter-spacing:3px;margin-top:4px}
+.tagline{color:#803300;font-size:18px;line-height:1.5;margin-top:16px;max-width:60ch}
+.index-body{display:grid;grid-template-columns:1fr 1fr;flex:1}
+.col-left{padding:24px 24px 24px 48px;border-right:1px dashed #803300}
+.col-right{padding:24px 48px 24px 24px}
+.sec-label{color:#803300;font-size:14px;letter-spacing:3px;margin-bottom:12px}
+.sec-rule{color:#4D2000;font-size:14px;margin-bottom:16px}
+.ch-row{margin-bottom:18px;padding-bottom:18px;border-bottom:1px dashed #331500}
+.ch-row:last-child{border-bottom:none}
+.ch-num{color:#803300;font-size:15px;letter-spacing:2px}
+.ch-name{font-size:22px;line-height:1.1;margin:2px 0}
+.ch-sub2{color:#803300;font-size:15px;letter-spacing:1px}
+.ch-terms{color:#4D2000;font-size:14px;margin-top:3px}
+.ch-dot{display:inline-block;width:10px;height:10px;margin-right:6px;vertical-align:middle}
+.green-dot{background:#33FF33}
+.amber-dot{background:#FFB000}
+.blue-dot{background:#5555FF}
+.cyan-dot{background:#00FFFF}
+.magenta-dot{background:#FF00FF}
+.util-block{margin-top:0}
+.util-row{margin-bottom:14px;padding-bottom:14px;border-bottom:1px dashed #331500}
+.util-row:last-child{border-bottom:none}
+.util-key{font-size:20px;color:#FF9944}
+.util-desc{color:#FF6600;font-size:15px;line-height:1.4}
+.util-sub{color:#803300;font-size:14px;margin-top:2px}
+.stats-block{margin-top:20px;padding-top:16px;border-top:1px dashed #803300}
+.stat-row{display:flex;justify-content:space-between;font-size:16px;margin-bottom:6px}
+.stat-label{color:#803300}
+.stat-val{color:#FF9944}
+.ascii-border{color:#4D2000;font-size:14px;letter-spacing:1px;margin-bottom:10px}
+.syslog{color:#4D2000;font-size:13px;line-height:1.7;margin-top:16px;padding-top:12px;border-top:1px dashed #331500}
+.blink{animation:bl 1.1s step-end infinite}
+@keyframes bl{0%,100%{opacity:1}50%{opacity:0}}
+.fkbar{border-top:1px solid #FF6600;display:flex;background:#000;z-index:11;flex-shrink:0}
+.fk{flex:1;border-right:1px solid #FF6600;padding:5px 2px;text-align:center;font-size:13px;letter-spacing:1px}
+.fk:last-child{border-right:none}
+.dk{background:#331500;color:#FF6600}.ak{background:#FF9944;color:#000}
+</style>
+<div class="page">
+<div class="titlebar">
+  <div class="ts">LEXICON@FIELDGUIDE:/INDEX/</div>
+  <div class="ts">[-][X]</div>
+</div>
+<div class="main">
+  <div class="hero">
+    <div class="vol">A FIELD GUIDE &nbsp;·&nbsp; EDITION ONE &nbsp;·&nbsp; ADAPTED &nbsp;·&nbsp; 2026</div>
+    <div class="big-title">SALES &amp; MARKETING<br>LEXICON</div>
+    <div class="big-sub">// FOR PEOPLE WHO CARE MORE ABOUT THE WORK THAN THE TRANSACTION</div>
+    <div class="tagline">Sixty-one working definitions for founders, operators, and anyone who needs to get their work to the people it's actually for — without having to become someone they're not.</div>
+  </div>
+
+  <div class="index-body">
+    <div class="col-left">
+      <div class="sec-label">// CHAPTER INDEX</div>
+      <div class="sec-rule">* * * * * * * * * * * * * * * * * * * * *</div>
+
+      <div class="ch-row">
+        <div class="ch-num"><span class="ch-dot green-dot"></span>CHAPTER 01</div>
+        <div class="ch-name" style="color:#33FF33">Mapping the People Around Your Work</div>
+        <div class="ch-sub2">// The Cast of Characters</div>
+        <div class="ch-terms" style="color:#1a7a1a">9 TERMS &nbsp;·&nbsp; Leads, prospects, ICP, lifecycle, cohort</div>
+      </div>
+
+      <div class="ch-row">
+        <div class="ch-num"><span class="ch-dot amber-dot"></span>CHAPTER 02</div>
+        <div class="ch-name" style="color:#FFB000">How People Find You (and How You Find Them)</div>
+        <div class="ch-sub2">// Channels &amp; Motions</div>
+        <div class="ch-terms" style="color:#996800">21 TERMS &nbsp;·&nbsp; Outreach, referrals, funnels, nurture, SEO</div>
+      </div>
+
+      <div class="ch-row">
+        <div class="ch-num"><span class="ch-dot blue-dot"></span>CHAPTER 03</div>
+        <div class="ch-name" style="color:#9999FF">What You Say and Why It Should Be You</div>
+        <div class="ch-sub2">// Positioning &amp; Story</div>
+        <div class="ch-terms" style="color:#2222AA">16 TERMS &nbsp;·&nbsp; Positioning, offer, hook, social proof, CTA</div>
+      </div>
+
+      <div class="ch-row">
+        <div class="ch-num"><span class="ch-dot cyan-dot"></span>CHAPTER 04</div>
+        <div class="ch-name" style="color:#00FFFF">From Conversation to Commitment</div>
+        <div class="ch-sub2">// The Close</div>
+        <div class="ch-terms" style="color:#007777">12 TERMS &nbsp;·&nbsp; Discovery, objections, closing, churn</div>
+      </div>
+
+      <div class="ch-row">
+        <div class="ch-num"><span class="ch-dot magenta-dot"></span>CHAPTER 05</div>
+        <div class="ch-name" style="color:#FF80FF">Knowing Whether It Worked</div>
+        <div class="ch-sub2">// Metrics &amp; Machinery</div>
+        <div class="ch-terms" style="color:#880088">8 TERMS &nbsp;·&nbsp; CAC, LTV, CTR, attribution, A/B testing</div>
+      </div>
+
+      <div class="stats-block">
+        <div class="stat-row"><span class="stat-label">TOTAL TERMS</span><span class="stat-val">61</span></div>
+        <div class="stat-row"><span class="stat-label">CHAPTERS</span><span class="stat-val">05</span></div>
+        <div class="stat-row"><span class="stat-label">SERVICE TYPES COVERED</span><span class="stat-val">04</span></div>
+        <div class="stat-row"><span class="stat-label">ORIGINAL TERMS INDEXED</span><span class="stat-val">61 / 61</span></div>
+        <div class="stat-row"><span class="stat-label">ADAPTED NAMES</span><span class="stat-val">61 / 61</span></div>
+        <div class="stat-row"><span class="stat-label">EXAMPLES</span><span class="stat-val">61 / 61</span></div>
+      </div>
+    </div>
+
+    <div class="col-right">
+      <div class="sec-label">// UTILITY PAGES</div>
+      <div class="sec-rule">* * * * * * * * * * * * * * * * * * * * *</div>
+
+      <div class="util-block">
+        <div class="util-row">
+          <div class="util-key">[F1] &nbsp;HELP</div>
+          <div class="util-desc">How to use this lexicon — reading order, how the adapted names relate to the originals, and how to navigate the examples.</div>
+          <div class="util-sub">COLOR: #FFFF00 &nbsp;·&nbsp; CGA YELLOW</div>
+        </div>
+        <div class="util-row">
+          <div class="util-key">[F2] &nbsp;ALL TERMS</div>
+          <div class="util-desc">A compact reference of all 61 terms in sequence — adapted name, original term, and chapter. No definitions; just the full list at a glance.</div>
+          <div class="util-sub">COLOR: #FFFFFF &nbsp;·&nbsp; PAPER-WHITE PHOSPHOR</div>
+        </div>
+        <div class="util-row">
+          <div class="util-key">[F3–F7] &nbsp;CHAPTERS 01–05</div>
+          <div class="util-desc">Full chapter pages with definitions, original terminology, and one example per term across four service types.</div>
+          <div class="util-sub">ONE COLOR PER CHAPTER &nbsp;·&nbsp; LETTER SIZED</div>
+        </div>
+        <div class="util-row">
+          <div class="util-key">[F10] &nbsp;EXIT</div>
+          <div class="util-desc">End of volume. The colophon is printed at the close of Chapter 05.</div>
+        </div>
+      </div>
+
+      <div class="sec-label" style="margin-top:20px">// SERVICE TYPES IN EXAMPLES</div>
+      <div class="sec-rule">* * * * * * * * * * * * * * * * * * * * *</div>
+      <div style="color:#FF6600;font-size:15px;line-height:1.8">
+        <div>① &nbsp;CONSULTING</div>
+        <div>② &nbsp;1-ON-1 WORK</div>
+        <div>③ &nbsp;DESIGN / BUILD</div>
+        <div>④ &nbsp;DIGITAL PRODUCT</div>
+      </div>
+
+      <div class="syslog">
+        [+] INDEX LOADED SUCCESSFULLY<br>
+        [+] ALL MODULES PRESENT AND ACCOUNTED FOR<br>
+        [+] 61 TERMS ACROSS 5 CHAPTERS<br>
+        [+] USE F-KEYS TO NAVIGATE<br>
+        [&nbsp;] AWAITING INPUT<span class="blink">_</span>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="fkbar">
+  <div class="fk dk">F1 — HELP</div><div class="fk dk">F2 — ALL TERMS</div><div class="fk dk">F3 — CH 01</div><div class="fk dk">F4 — CH 02</div><div class="fk dk">F5 — CH 03</div><div class="fk dk">F6 — CH 04</div><div class="fk dk">F7 — CH 05</div><div class="fk ak">IDX</div>
+</div>
+</div>

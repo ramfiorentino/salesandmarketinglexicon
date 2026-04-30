@@ -1,0 +1,228 @@
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+*{box-sizing:border-box;margin:0;padding:0}
+.page{background:#000;color:#FFB000;font-family:'VT323','Courier New',monospace;width:816px;min-height:1056px;position:relative;overflow:hidden}
+.page::after{content:'';position:absolute;inset:0;background:repeating-linear-gradient(0deg,transparent,transparent 3px,rgba(20,10,0,0.18) 3px,rgba(20,10,0,0.18) 4px);pointer-events:none;z-index:10}
+.titlebar{border-bottom:1px solid #FFB000;padding:5px 16px;display:flex;justify-content:space-between;background:#000}
+.ts{font-size:16px;color:#996800}
+.body{display:grid;grid-template-columns:1fr 1fr 1fr;gap:0}
+.ph{grid-column:1/-1;padding:8px 16px;border-bottom:1px dashed #996800}
+.col{padding:10px 12px;border-right:1px dashed #996800}
+.col:last-child{border-right:none}
+.ch-title{font-size:20px;color:#FFD066;letter-spacing:4px}
+.ch-sub{color:#996800;font-size:15px;letter-spacing:2px}
+.intro{color:#996800;font-size:15px;line-height:1.45}
+.sr{color:#4D3400;font-size:14px;margin-bottom:8px}
+.st{color:#FFB000;font-size:15px;letter-spacing:3px;margin-bottom:4px}
+.tr{margin-bottom:9px;padding-bottom:9px;border-bottom:1px dashed #1a0d00}
+.tr:last-child{border-bottom:none;margin-bottom:0}
+.tn{color:#FFD066;font-size:18px;line-height:1.2}
+.to{color:#4D3400;font-size:14px}
+.td{color:#FFB000;font-size:15px;line-height:1.4}
+.tel{color:#4D3400;font-size:13px;margin-top:2px}
+.te{color:#996800;font-size:13px;line-height:1.35;padding-left:1.5ch;border-left:1px solid #4D3400}
+.stat{font-size:14px;color:#FFB000}.sv{color:#FFD066}
+.tag{background:#FFB000;color:#000;padding:0 5px;font-size:14px}
+.fkbar{border-top:1px solid #FFB000;display:flex;background:#000;position:relative;z-index:11}
+.fk{flex:1;border-right:1px solid #FFB000;padding:5px 2px;text-align:center;font-size:13px;letter-spacing:1px}
+.fk:last-child{border-right:none}
+.dk{background:#2a1800;color:#FFB000}.ak{background:#FFD066;color:#000}
+.blink{animation:bl 1.1s step-end infinite}
+@keyframes bl{0%,100%{opacity:1}50%{opacity:0}}
+.syslog{color:#4D3400;font-size:13px;line-height:1.6;margin-top:8px;padding-top:8px;border-top:1px dashed #1a0d00}
+</style>
+<div class="page">
+<div class="titlebar">
+  <div class="ts">LEXICON@FIELDGUIDE:/CH02/CHANNELS_AND_MOTIONS/</div>
+  <div class="ts">[-][X]</div>
+</div>
+<div class="ph" style="display:flex;justify-content:space-between;align-items:flex-start">
+  <div>
+    <div class="ch-title">C H A P T E R &nbsp; T W O</div>
+    <div class="ch-sub">// HOW PEOPLE FIND YOU (AND HOW YOU FIND THEM)</div>
+  </div>
+  <div style="text-align:right">
+    <div style="color:#4D3400;font-size:14px;letter-spacing:2px">VOL I OF I &nbsp;·&nbsp; ADAPTED ED.</div>
+    <div style="display:flex;gap:16px;justify-content:flex-end;margin-top:4px">
+      <div class="stat">TERMS <span class="sv">21</span></div>
+      <div class="stat">STATUS <span class="sv tag">LOADED</span></div>
+      <div class="stat">CH <span class="sv">02/05</span></div>
+    </div>
+  </div>
+</div>
+<div class="ph" style="border-top:none;padding:6px 16px">
+  <div class="intro">There's no single right way to get your work in front of the right people. The terms below describe the main shapes that process takes — some active, some passive, some that scale, some that don't. Knowing what each one is helps you decide where to put your energy.</div>
+</div>
+<div class="body">
+  <div class="col">
+    <div class="st">T E R M S &nbsp; 01–07</div>
+    <div class="sr">* * * * * * * * * * * * * * * * * *</div>
+    <div class="tr">
+      <div class="tn">Reaching Out Directly</div>
+      <div class="to">// Direct Outreach</div>
+      <div class="td">You, writing to a specific person on purpose. One-to-one — you picked them.</div>
+      <div class="tel">[+] EX (consulting)</div>
+      <div class="te">Emailing an operations lead, referencing a specific challenge they've publicly talked about.</div>
+    </div>
+    <div class="tr">
+      <div class="tn">Reaching Out Cold</div>
+      <div class="to">// Cold Outreach / Cold Email / Cold Call</div>
+      <div class="td">Direct contact with no prior relationship. Introducing yourself from scratch.</div>
+      <div class="tel">[+] EX (design / build)</div>
+      <div class="te">Contacting a business whose product has an obvious gap — leading with a specific observation, not a generic offer.</div>
+    </div>
+    <div class="tr">
+      <div class="tn">An Introduction Through Someone You Both Know</div>
+      <div class="to">// Warm Intro</div>
+      <div class="td">Someone who knows you both makes the connection. Trust travels with them.</div>
+      <div class="tel">[+] EX (1-on-1 work)</div>
+      <div class="te">A past participant mentions you to a friend going through something similar and connects you both.</div>
+    </div>
+    <div class="tr">
+      <div class="tn">A Recommendation</div>
+      <div class="to">// Referral</div>
+      <div class="td">Someone who knows your work sends a new person your way — passing their own credibility along.</div>
+      <div class="tel">[+] EX (consulting)</div>
+      <div class="te">A client mentions you unprompted to another founder facing the same challenge.</div>
+    </div>
+    <div class="tr">
+      <div class="tn">People Finding You Naturally</div>
+      <div class="to">// Organic Reach / Organic Marketing</div>
+      <div class="td">Someone discovers your work without you pushing it — search, content, word-of-mouth. Slower to build; harder to kill.</div>
+      <div class="tel">[+] EX (digital product)</div>
+      <div class="te">Your product gets mentioned in a newsletter you had nothing to do with because a reader found it useful.</div>
+    </div>
+    <div class="tr">
+      <div class="tn">Sharing Without Paid Promotion</div>
+      <div class="to">// Organic Socials</div>
+      <div class="td">Posting on platforms without paying to boost it. Reach comes from the work itself.</div>
+      <div class="tel">[+] EX (1-on-1 work)</div>
+      <div class="te">A post about a stuck point you commonly see — framed so people feel recognised, not sold to.</div>
+    </div>
+    <div class="tr">
+      <div class="tn">A Gap Worth Filling</div>
+      <div class="to">// Hole in the Market</div>
+      <div class="td">A need unmet, a group poorly served, a question no one's answered clearly.</div>
+      <div class="tel">[+] EX (design / build)</div>
+      <div class="te">A whole product category built by people who don't think about the person using it. You do.</div>
+    </div>
+  </div>
+
+  <div class="col">
+    <div class="st">T E R M S &nbsp; 08–14</div>
+    <div class="sr">* * * * * * * * * * * * * * * * * *</div>
+    <div class="tr">
+      <div class="tn">Scrappy, Creative Visibility</div>
+      <div class="to">// Unconventional Outreach / Pirate Marketing</div>
+      <div class="td">Low-budget, inventive ways of getting noticed when you lack resources for conventional promotion.</div>
+      <div class="tel">[+] EX (digital product)</div>
+      <div class="te">Answering questions in a niche community so thoroughly that people start asking who you are.</div>
+    </div>
+    <div class="tr">
+      <div class="tn">Experimenting to Find What Reaches People</div>
+      <div class="to">// Growth Testing / Growth Hacking</div>
+      <div class="td">Small deliberate experiments to find out which approaches actually connect your work with the right people.</div>
+      <div class="tel">[+] EX (consulting)</div>
+      <div class="te">Testing two ways of describing your offer to see which gets more genuine replies — not just opens.</div>
+    </div>
+    <div class="tr">
+      <div class="tn">Unexpected Presence</div>
+      <div class="to">// Guerrilla Approach / Guerrilla Marketing</div>
+      <div class="td">Unconventional tactics that catch people off-guard in a good way. Memorable because surprising.</div>
+      <div class="tel">[+] EX (1-on-1 work)</div>
+      <div class="te">Leaving a long, genuinely useful answer on a public forum. No links. Just help. People notice who wrote it.</div>
+    </div>
+    <div class="tr">
+      <div class="tn">Collaborating to Reach Each Other's Communities</div>
+      <div class="to">// Partnerships / Co-marketing</div>
+      <div class="td">Adjacent work shared across both communities. You both bring something genuine; you both reach new people.</div>
+      <div class="tel">[+] EX (design / build)</div>
+      <div class="te">A developer and designer agree to recommend each other when the situation calls for it.</div>
+    </div>
+    <div class="tr">
+      <div class="tn">A Series of Touchpoints Over Time</div>
+      <div class="to">// Sequence / Drip Campaign</div>
+      <div class="td">Planned messages sent gradually. The right thing to say depends on where someone is in their understanding.</div>
+      <div class="tel">[+] EX (digital product)</div>
+      <div class="te">A short email series after someone downloads your free guide — each one going a layer deeper.</div>
+    </div>
+    <div class="tr">
+      <div class="tn">A Moment of Contact</div>
+      <div class="to">// Touchpoint</div>
+      <div class="td">Any instance where someone encounters your work. Meaningful connection rarely comes from a single moment.</div>
+      <div class="tel">[+] EX (consulting)</div>
+      <div class="te">A potential client reads your article, sees you mentioned, attends your talk — by the time they reach out, it's begun.</div>
+    </div>
+    <div class="tr">
+      <div class="tn">Staying in Touch</div>
+      <div class="to">// Follow-up</div>
+      <div class="td">Reaching back out after an initial contact. Most conversations fade not from rejection — but from silence.</div>
+      <div class="tel">[+] EX (1-on-1 work)</div>
+      <div class="te">Someone expressed interest then went quiet. A warm message two weeks later — no pressure — often restarts things.</div>
+    </div>
+  </div>
+
+  <div class="col" style="border-right:none">
+    <div class="st">T E R M S &nbsp; 15–21</div>
+    <div class="sr">* * * * * * * * * * * * * * * * * *</div>
+    <div class="tr">
+      <div class="tn">Staying Present for Someone Not Ready Yet</div>
+      <div class="to">// Nurturing</div>
+      <div class="td">Light, useful contact over time. You're there when they're ready. Patience, not pressure.</div>
+      <div class="tel">[+] EX (digital product)</div>
+      <div class="te">A subscriber opening every email but not buying yet — continuing to send useful content is the right move.</div>
+    </div>
+    <div class="tr">
+      <div class="tn">The Path from Discovery to Engagement</div>
+      <div class="to">// Funnel</div>
+      <div class="td">Many people at the top, fewer at each stage, a handful who engage closely. Understanding the shape helps you focus.</div>
+      <div class="tel">[+] EX (design / build)</div>
+      <div class="te">Hundreds visit your portfolio, fewer look closely, fewer reach out — a handful become clients. Each narrowing tells you something.</div>
+    </div>
+    <div class="tr">
+      <div class="tn">Early / Middle / Late in Someone's Journey</div>
+      <div class="to">// TOFU / MOFU / BOFU</div>
+      <div class="td">Where someone is with your work. What you share should match where they are — not where you want them to be.</div>
+      <div class="tel">[+] EX (design / build)</div>
+      <div class="te">Overview for early discovery. Process breakdown for comparison. Testimonials for someone ready to decide.</div>
+    </div>
+    <div class="tr">
+      <div class="tn">Something Useful You Offer Freely</div>
+      <div class="to">// Entry-Point Resource / Lead Magnet</div>
+      <div class="td">A guide, tool, or resource shared openly. Genuinely useful on its own — not just bait.</div>
+      <div class="tel">[+] EX (digital product)</div>
+      <div class="te">A free template solving a small but real version of the larger problem your product addresses.</div>
+    </div>
+    <div class="tr">
+      <div class="tn">A Focused Page for One Purpose</div>
+      <div class="to">// Landing Page</div>
+      <div class="td">One audience, one offer, one action. Everything on it serves that single purpose.</div>
+      <div class="tel">[+] EX (1-on-1 work)</div>
+      <div class="te">A page just for people considering working with you — who it's for, what happens, what it costs, how to start.</div>
+    </div>
+    <div class="tr">
+      <div class="tn">What Someone Sees First</div>
+      <div class="to">// Above the Fold</div>
+      <div class="td">Visible before scrolling. If your core point isn't clear here, most people won't look further.</div>
+      <div class="tel">[+] EX (digital product)</div>
+      <div class="te">Your product page must answer "what is this and who is it for" before anyone scrolls — or most will leave.</div>
+    </div>
+    <div class="tr">
+      <div class="tn">Getting Someone's Contact Information</div>
+      <div class="to">// Contact Capture</div>
+      <div class="td">The moment someone gives you a way to reach them. They're saying they want to stay in contact with your work.</div>
+      <div class="tel">[+] EX (design / build)</div>
+      <div class="te">A potential client fills in the enquiry form. They haven't committed — but they've opened the door.</div>
+    </div>
+    <div class="syslog">
+      [+] CH02 LOADED · 21/21 TERMS · 4/4 SERVICE TYPES<br>
+      [+] NEXT: CH03 — WHAT YOU SAY<br>
+      [&nbsp;] AWAITING INPUT<span class="blink">_</span>
+    </div>
+  </div>
+</div>
+<div class="fkbar">
+  <div class="fk dk">F1 — HELP</div><div class="fk dk">F2 — ALL TERMS</div><div class="fk dk">F3 — CH 01</div><div class="fk ak">F4 — CH 02</div><div class="fk dk">F5 — CH 03</div><div class="fk dk">F6 — CH 04</div><div class="fk dk">F7 — CH 05</div><div class="fk dk">F10 — EXIT</div>
+</div>
+</div>

@@ -1,0 +1,417 @@
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+*{box-sizing:border-box;margin:0;padding:0}
+.page{background:#000;color:#FFFFFF;font-family:'VT323','Courier New',monospace;width:816px;min-height:1056px;position:relative;overflow:hidden;display:flex;flex-direction:column}
+.page::after{content:'';position:absolute;inset:0;background:repeating-linear-gradient(0deg,transparent,transparent 3px,rgba(15,15,15,0.15) 3px,rgba(15,15,15,0.15) 4px);pointer-events:none;z-index:10}
+.titlebar{border-bottom:1px solid #FFFFFF;padding:5px 16px;display:flex;justify-content:space-between;background:#000;flex-shrink:0}
+.ts{font-size:16px;color:#666666}
+.ph{padding:10px 20px;border-bottom:1px dashed #666666}
+.ch-title{font-size:20px;color:#FFFFFF;letter-spacing:4px}
+.ch-sub{color:#666666;font-size:15px;letter-spacing:2px}
+.body{flex:1;display:grid;grid-template-columns:1fr 1fr 1fr;padding:0}
+.col{padding:10px 12px;border-right:1px dashed #333333}
+.col:last-child{border-right:none}
+.st{font-size:15px;letter-spacing:3px;margin-bottom:4px}
+.sr{color:#333333;font-size:13px;margin-bottom:6px}
+.tr{margin-bottom:5px;padding-bottom:5px;border-bottom:1px solid #111111}
+.tr:last-child{border-bottom:none;margin-bottom:0}
+.num{color:#333333;font-size:13px;display:inline}
+.tn{font-size:16px;line-height:1.15;display:inline}
+.to{font-size:13px;line-height:1.2;padding-left:0}
+.ch-tag{font-size:12px;padding:0 4px;display:inline-block;vertical-align:middle;margin-top:2px}
+.fkbar{border-top:1px solid #FFFFFF;display:flex;background:#000;z-index:11;flex-shrink:0}
+.fk{flex:1;border-right:1px solid #FFFFFF;padding:5px 2px;text-align:center;font-size:13px;letter-spacing:1px}
+.fk:last-child{border-right:none}
+.dk{background:#1a1a1a;color:#FFFFFF}.ak{background:#CCCCCC;color:#000}
+.syslog{color:#333333;font-size:13px;line-height:1.6;padding:8px 20px;border-top:1px dashed #333333;flex-shrink:0}
+.blink{animation:bl 1.1s step-end infinite}
+@keyframes bl{0%,100%{opacity:1}50%{opacity:0}}
+</style>
+<div class="page">
+<div class="titlebar">
+  <div class="ts">LEXICON@FIELDGUIDE:/ALL_TERMS/</div>
+  <div class="ts">[-][X]</div>
+</div>
+<div class="ph" style="display:flex;justify-content:space-between;align-items:center">
+  <div>
+    <div class="ch-title">F 2 &nbsp;&nbsp; — &nbsp;&nbsp; A L L &nbsp; T E R M S</div>
+    <div class="ch-sub">// FULL INDEX · 61 TERMS · 5 CHAPTERS · ADAPTED + ORIGINAL</div>
+  </div>
+  <div style="text-align:right;color:#666666;font-size:14px;letter-spacing:2px">VOL I OF I &nbsp;·&nbsp; ADAPTED ED.</div>
+</div>
+
+<div class="body">
+
+  <div class="col">
+    <div class="st" style="color:#33FF33">C H . 0 1 &nbsp;—&nbsp; P E O P L E</div>
+    <div class="sr">* * * * * * * * * * * * * * * * * *</div>
+
+    <div class="tr">
+      <div style="color:#1a7a1a;font-size:13px">01</div>
+      <div class="tn" style="color:#80FF80">Contact</div>
+      <div class="to" style="color:#1a7a1a">// Lead</div>
+    </div>
+    <div class="tr">
+      <div style="color:#1a7a1a;font-size:13px">02</div>
+      <div class="tn" style="color:#80FF80">Unknown Contact</div>
+      <div class="to" style="color:#1a7a1a">// Cold Lead</div>
+    </div>
+    <div class="tr">
+      <div style="color:#1a7a1a;font-size:13px">03</div>
+      <div class="tn" style="color:#80FF80">Already-Curious Contact</div>
+      <div class="to" style="color:#1a7a1a">// Warm Lead</div>
+    </div>
+    <div class="tr">
+      <div style="color:#1a7a1a;font-size:13px">04</div>
+      <div class="tn" style="color:#80FF80">Relationship Contact</div>
+      <div class="to" style="color:#1a7a1a">// Friendly Informal</div>
+    </div>
+    <div class="tr">
+      <div style="color:#1a7a1a;font-size:13px">05</div>
+      <div class="tn" style="color:#80FF80">Good-Fit Contact</div>
+      <div class="to" style="color:#1a7a1a">// Qualified Lead</div>
+    </div>
+    <div class="tr">
+      <div style="color:#1a7a1a;font-size:13px">06</div>
+      <div class="tn" style="color:#80FF80">Someone You're Exploring With</div>
+      <div class="to" style="color:#1a7a1a">// Prospect</div>
+    </div>
+    <div class="tr">
+      <div style="color:#1a7a1a;font-size:13px">07</div>
+      <div class="tn" style="color:#80FF80">Your Ideal Person</div>
+      <div class="to" style="color:#1a7a1a">// ICP — Ideal Collaborator Profile</div>
+    </div>
+    <div class="tr">
+      <div style="color:#1a7a1a;font-size:13px">08</div>
+      <div class="tn" style="color:#80FF80">Where Someone Is With Your Work</div>
+      <div class="to" style="color:#1a7a1a">// Lifecycle Stage</div>
+    </div>
+    <div class="tr">
+      <div style="color:#1a7a1a;font-size:13px">09</div>
+      <div class="tn" style="color:#80FF80">A Group You Learn From Together</div>
+      <div class="to" style="color:#1a7a1a">// Cohort</div>
+    </div>
+
+    <div class="st" style="color:#FFB000;margin-top:12px">C H . 0 2 &nbsp;—&nbsp; C H A N N E L S</div>
+    <div class="sr">* * * * * * * * * * * * * * * * * *</div>
+
+    <div class="tr">
+      <div style="color:#996800;font-size:13px">10</div>
+      <div class="tn" style="color:#FFD066">Reaching Out Directly</div>
+      <div class="to" style="color:#996800">// Direct Outreach</div>
+    </div>
+    <div class="tr">
+      <div style="color:#996800;font-size:13px">11</div>
+      <div class="tn" style="color:#FFD066">Reaching Out Cold</div>
+      <div class="to" style="color:#996800">// Cold Outreach / Cold Email / Cold Call</div>
+    </div>
+    <div class="tr">
+      <div style="color:#996800;font-size:13px">12</div>
+      <div class="tn" style="color:#FFD066">An Introduction Through Someone You Both Know</div>
+      <div class="to" style="color:#996800">// Warm Intro</div>
+    </div>
+    <div class="tr">
+      <div style="color:#996800;font-size:13px">13</div>
+      <div class="tn" style="color:#FFD066">A Recommendation</div>
+      <div class="to" style="color:#996800">// Referral</div>
+    </div>
+    <div class="tr">
+      <div style="color:#996800;font-size:13px">14</div>
+      <div class="tn" style="color:#FFD066">People Finding You Naturally</div>
+      <div class="to" style="color:#996800">// Organic Reach / Organic Marketing</div>
+    </div>
+    <div class="tr">
+      <div style="color:#996800;font-size:13px">15</div>
+      <div class="tn" style="color:#FFD066">Sharing Without Paid Promotion</div>
+      <div class="to" style="color:#996800">// Organic Socials</div>
+    </div>
+    <div class="tr">
+      <div style="color:#996800;font-size:13px">16</div>
+      <div class="tn" style="color:#FFD066">A Gap Worth Filling</div>
+      <div class="to" style="color:#996800">// Hole in the Market</div>
+    </div>
+    <div class="tr">
+      <div style="color:#996800;font-size:13px">17</div>
+      <div class="tn" style="color:#FFD066">Scrappy, Creative Visibility</div>
+      <div class="to" style="color:#996800">// Pirate Marketing</div>
+    </div>
+    <div class="tr">
+      <div style="color:#996800;font-size:13px">18</div>
+      <div class="tn" style="color:#FFD066">Experimenting to Find What Reaches People</div>
+      <div class="to" style="color:#996800">// Growth Hacking</div>
+    </div>
+    <div class="tr">
+      <div style="color:#996800;font-size:13px">19</div>
+      <div class="tn" style="color:#FFD066">Unexpected Presence</div>
+      <div class="to" style="color:#996800">// Guerrilla Marketing</div>
+    </div>
+    <div class="tr">
+      <div style="color:#996800;font-size:13px">20</div>
+      <div class="tn" style="color:#FFD066">Collaborating to Reach Each Other's Communities</div>
+      <div class="to" style="color:#996800">// Partnerships / Co-marketing</div>
+    </div>
+  </div>
+
+  <div class="col">
+    <div class="st" style="color:#FFB000">C H . 0 2 &nbsp;( C O N T I N U E D )</div>
+    <div class="sr">* * * * * * * * * * * * * * * * * *</div>
+
+    <div class="tr">
+      <div style="color:#996800;font-size:13px">21</div>
+      <div class="tn" style="color:#FFD066">A Series of Touchpoints Over Time</div>
+      <div class="to" style="color:#996800">// Sequence / Drip Campaign</div>
+    </div>
+    <div class="tr">
+      <div style="color:#996800;font-size:13px">22</div>
+      <div class="tn" style="color:#FFD066">A Moment of Contact</div>
+      <div class="to" style="color:#996800">// Touchpoint</div>
+    </div>
+    <div class="tr">
+      <div style="color:#996800;font-size:13px">23</div>
+      <div class="tn" style="color:#FFD066">Staying in Touch</div>
+      <div class="to" style="color:#996800">// Follow-up</div>
+    </div>
+    <div class="tr">
+      <div style="color:#996800;font-size:13px">24</div>
+      <div class="tn" style="color:#FFD066">Staying Present for Someone Not Ready Yet</div>
+      <div class="to" style="color:#996800">// Nurturing</div>
+    </div>
+    <div class="tr">
+      <div style="color:#996800;font-size:13px">25</div>
+      <div class="tn" style="color:#FFD066">The Path from Discovery to Engagement</div>
+      <div class="to" style="color:#996800">// Funnel</div>
+    </div>
+    <div class="tr">
+      <div style="color:#996800;font-size:13px">26</div>
+      <div class="tn" style="color:#FFD066">Early / Middle / Late in Someone's Journey</div>
+      <div class="to" style="color:#996800">// TOFU / MOFU / BOFU</div>
+    </div>
+    <div class="tr">
+      <div style="color:#996800;font-size:13px">27</div>
+      <div class="tn" style="color:#FFD066">Something Useful You Offer Freely</div>
+      <div class="to" style="color:#996800">// Lead Magnet</div>
+    </div>
+    <div class="tr">
+      <div style="color:#996800;font-size:13px">28</div>
+      <div class="tn" style="color:#FFD066">A Focused Page for One Purpose</div>
+      <div class="to" style="color:#996800">// Landing Page</div>
+    </div>
+    <div class="tr">
+      <div style="color:#996800;font-size:13px">29</div>
+      <div class="tn" style="color:#FFD066">What Someone Sees First</div>
+      <div class="to" style="color:#996800">// Above the Fold</div>
+    </div>
+    <div class="tr">
+      <div style="color:#996800;font-size:13px">30</div>
+      <div class="tn" style="color:#FFD066">Getting Someone's Contact Information</div>
+      <div class="to" style="color:#996800">// Contact Capture</div>
+    </div>
+
+    <div class="st" style="color:#9999FF;margin-top:12px">C H . 0 3 &nbsp;—&nbsp; P O S I T I O N I N G</div>
+    <div class="sr">* * * * * * * * * * * * * * * * * *</div>
+
+    <div class="tr">
+      <div style="color:#2222AA;font-size:13px">31</div>
+      <div class="tn" style="color:#BBBBFF">Where You Fit in Someone's Mind</div>
+      <div class="to" style="color:#2222AA">// Positioning</div>
+    </div>
+    <div class="tr">
+      <div style="color:#2222AA;font-size:13px">32</div>
+      <div class="tn" style="color:#BBBBFF">Your Core Reason to Choose You</div>
+      <div class="to" style="color:#2222AA">// Value Proposition</div>
+    </div>
+    <div class="tr">
+      <div style="color:#2222AA;font-size:13px">33</div>
+      <div class="tn" style="color:#BBBBFF">When the Work Starts Pulling Itself</div>
+      <div class="to" style="color:#2222AA">// Product-Market Fit / PMF</div>
+    </div>
+    <div class="tr">
+      <div style="color:#2222AA;font-size:13px">34</div>
+      <div class="tn" style="color:#BBBBFF">What Makes You Distinct and Keeps It That Way</div>
+      <div class="to" style="color:#2222AA">// Differentiation / Moat</div>
+    </div>
+    <div class="tr">
+      <div style="color:#2222AA;font-size:13px">35</div>
+      <div class="tn" style="color:#BBBBFF">Your Sharpest Entry Point</div>
+      <div class="to" style="color:#2222AA">// Wedge</div>
+    </div>
+    <div class="tr">
+      <div style="color:#2222AA;font-size:13px">36</div>
+      <div class="tn" style="color:#BBBBFF">The First Group You're Actually For</div>
+      <div class="to" style="color:#2222AA">// Beachhead Market</div>
+    </div>
+    <div class="tr">
+      <div style="color:#2222AA;font-size:13px">37</div>
+      <div class="tn" style="color:#BBBBFF">How Big the Space Is and How Much Is Yours</div>
+      <div class="to" style="color:#2222AA">// TAM / SAM / SOM</div>
+    </div>
+    <div class="tr">
+      <div style="color:#2222AA;font-size:13px">38</div>
+      <div class="tn" style="color:#BBBBFF">Defining What You Do Rather Than Competing</div>
+      <div class="to" style="color:#2222AA">// Category Creation</div>
+    </div>
+    <div class="tr">
+      <div style="color:#2222AA;font-size:13px">39</div>
+      <div class="tn" style="color:#BBBBFF">The Opening That Earns Attention</div>
+      <div class="to" style="color:#2222AA">// Hook</div>
+    </div>
+    <div class="tr">
+      <div style="color:#2222AA;font-size:13px">40</div>
+      <div class="tn" style="color:#BBBBFF">A Brief Clear Explanation of What You Do</div>
+      <div class="to" style="color:#2222AA">// Pitch / Elevator Pitch</div>
+    </div>
+  </div>
+
+  <div class="col">
+    <div class="st" style="color:#9999FF">C H . 0 3 &nbsp;( C O N T I N U E D )</div>
+    <div class="sr">* * * * * * * * * * * * * * * * * *</div>
+
+    <div class="tr">
+      <div style="color:#2222AA;font-size:13px">41</div>
+      <div class="tn" style="color:#BBBBFF">The Full Proposition</div>
+      <div class="to" style="color:#2222AA">// Offer</div>
+    </div>
+    <div class="tr">
+      <div style="color:#2222AA;font-size:13px">42</div>
+      <div class="tn" style="color:#BBBBFF">The Three Jobs of a Page</div>
+      <div class="to" style="color:#2222AA">// Headline, Subhead &amp; Body</div>
+    </div>
+    <div class="tr">
+      <div style="color:#2222AA;font-size:13px">43</div>
+      <div class="tn" style="color:#BBBBFF">Evidence That Others Found It Valuable</div>
+      <div class="to" style="color:#2222AA">// Social Proof</div>
+    </div>
+    <div class="tr">
+      <div style="color:#2222AA;font-size:13px">44</div>
+      <div class="tn" style="color:#BBBBFF">A Real Reason to Act Now Rather Than Later</div>
+      <div class="to" style="color:#2222AA">// Urgency / Scarcity</div>
+    </div>
+    <div class="tr">
+      <div style="color:#2222AA;font-size:13px">45</div>
+      <div class="tn" style="color:#BBBBFF">The One Thing You're Asking Someone to Do</div>
+      <div class="to" style="color:#2222AA">// Call to Action / CTA</div>
+    </div>
+    <div class="tr">
+      <div style="color:#2222AA;font-size:13px">46</div>
+      <div class="tn" style="color:#BBBBFF">Plainly Asking for What You Want</div>
+      <div class="to" style="color:#2222AA">// Direct Ask</div>
+    </div>
+
+    <div class="st" style="color:#00FFFF;margin-top:10px">C H . 0 4 &nbsp;—&nbsp; C O M M I T M E N T</div>
+    <div class="sr">* * * * * * * * * * * * * * * * * *</div>
+
+    <div class="tr">
+      <div style="color:#007777;font-size:13px">47</div>
+      <div class="tn" style="color:#80FFFF">The First Real Conversation</div>
+      <div class="to" style="color:#007777">// Discovery Call</div>
+    </div>
+    <div class="tr">
+      <div style="color:#007777;font-size:13px">48</div>
+      <div class="tn" style="color:#80FFFF">Showing What You Do in Context</div>
+      <div class="to" style="color:#007777">// Demo</div>
+    </div>
+    <div class="tr">
+      <div style="color:#007777;font-size:13px">49</div>
+      <div class="tn" style="color:#80FFFF">Responding to Hesitation Without Deflecting</div>
+      <div class="to" style="color:#007777">// Objection Handling</div>
+    </div>
+    <div class="tr">
+      <div style="color:#007777;font-size:13px">50</div>
+      <div class="tn" style="color:#80FFFF">Testing Whether Someone Is Ready</div>
+      <div class="to" style="color:#007777">// Trial Close</div>
+    </div>
+    <div class="tr">
+      <div style="color:#007777;font-size:13px">51</div>
+      <div class="tn" style="color:#80FFFF">The Moment of Decision</div>
+      <div class="to" style="color:#007777">// Close</div>
+    </div>
+    <div class="tr">
+      <div style="color:#007777;font-size:13px">52</div>
+      <div class="tn" style="color:#80FFFF">An Invitation Rather Than a Push</div>
+      <div class="to" style="color:#007777">// Soft Close</div>
+    </div>
+    <div class="tr">
+      <div style="color:#007777;font-size:13px">53</div>
+      <div class="tn" style="color:#80FFFF">A Direct Request for a Decision Now</div>
+      <div class="to" style="color:#007777">// Hard Close</div>
+    </div>
+    <div class="tr">
+      <div style="color:#007777;font-size:13px">54</div>
+      <div class="tn" style="color:#80FFFF">Moving Forward as Though the Decision Is Made</div>
+      <div class="to" style="color:#007777">// Assumptive Close</div>
+    </div>
+    <div class="tr">
+      <div style="color:#007777;font-size:13px">55</div>
+      <div class="tn" style="color:#80FFFF">The Paperwork That Makes It Real</div>
+      <div class="to" style="color:#007777">// Deal / Contract / LOI</div>
+    </div>
+    <div class="tr">
+      <div style="color:#007777;font-size:13px">56</div>
+      <div class="tn" style="color:#80FFFF">Passing Responsibility to the Next Stage</div>
+      <div class="to" style="color:#007777">// Handoff</div>
+    </div>
+    <div class="tr">
+      <div style="color:#007777;font-size:13px">57</div>
+      <div class="tn" style="color:#80FFFF">Any Time Someone Takes the Next Step</div>
+      <div class="to" style="color:#007777">// Conversion</div>
+    </div>
+    <div class="tr">
+      <div style="color:#007777;font-size:13px">58</div>
+      <div class="tn" style="color:#80FFFF">People Who Stop Engaging or Leave</div>
+      <div class="to" style="color:#007777">// Churn</div>
+    </div>
+
+    <div class="st" style="color:#FF80FF;margin-top:10px">C H . 0 5 &nbsp;—&nbsp; M E T R I C S</div>
+    <div class="sr">* * * * * * * * * * * * * * * * * *</div>
+
+    <div class="tr">
+      <div style="color:#880088;font-size:13px">59</div>
+      <div class="tn" style="color:#FF80FF">What It Actually Costs to Bring Someone New In</div>
+      <div class="to" style="color:#880088">// CAC — Customer Acquisition Cost</div>
+    </div>
+    <div class="tr">
+      <div style="color:#880088;font-size:13px">60</div>
+      <div class="tn" style="color:#FF80FF">What One Person Is Worth Over Time</div>
+      <div class="to" style="color:#880088">// LTV — Lifetime Value</div>
+    </div>
+    <div class="tr">
+      <div style="color:#880088;font-size:13px">61</div>
+      <div class="tn" style="color:#FF80FF">How Often Interest Turns Into Something Real</div>
+      <div class="to" style="color:#880088">// Win Rate / Close Rate</div>
+    </div>
+    <div class="tr">
+      <div style="color:#880088;font-size:13px">62</div>
+      <div class="tn" style="color:#FF80FF">Whether Your Opening Is Doing Its Job</div>
+      <div class="to" style="color:#880088">// CTR — Click-Through Rate</div>
+    </div>
+    <div class="tr">
+      <div style="color:#880088;font-size:13px">63</div>
+      <div class="tn" style="color:#FF80FF">Whether People Are Opening What You Send</div>
+      <div class="to" style="color:#880088">// Open Rate</div>
+    </div>
+    <div class="tr">
+      <div style="color:#880088;font-size:13px">64</div>
+      <div class="tn" style="color:#FF80FF">Whether People Are Actually Responding</div>
+      <div class="to" style="color:#880088">// Reply Rate</div>
+    </div>
+    <div class="tr">
+      <div style="color:#880088;font-size:13px">65</div>
+      <div class="tn" style="color:#FF80FF">Which of Your Efforts Actually Led Here</div>
+      <div class="to" style="color:#880088">// Attribution</div>
+    </div>
+    <div class="tr">
+      <div style="color:#880088;font-size:13px">66</div>
+      <div class="tn" style="color:#FF80FF">Replacing Guesswork With a Small Honest Experiment</div>
+      <div class="to" style="color:#880088">// A/B Test</div>
+    </div>
+  </div>
+
+</div>
+<div class="syslog">
+  [+] ALL TERMS LOADED &nbsp;·&nbsp; 61 TERMS ACROSS 5 CHAPTERS &nbsp;·&nbsp; FOR DEFINITIONS SEE F3–F7 &nbsp;·&nbsp; [&nbsp;] AWAITING INPUT<span class="blink">_</span>
+</div>
+<div class="fkbar">
+  <div class="fk dk">F1 — HELP</div><div class="fk ak">F2 — ALL TERMS</div><div class="fk dk">F3 — CH 01</div><div class="fk dk">F4 — CH 02</div><div class="fk dk">F5 — CH 03</div><div class="fk dk">F6 — CH 04</div><div class="fk dk">F7 — CH 05</div><div class="fk dk">F10 — EXIT</div>
+</div>
+</div>

@@ -1,0 +1,175 @@
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+*{box-sizing:border-box;margin:0;padding:0}
+.page{background:#000;color:#33ff33;font-family:'VT323','Courier New',monospace;width:816px;min-height:1056px;padding:0;position:relative;overflow:hidden;font-size:18px;line-height:1.5}
+.page::after{content:'';position:absolute;inset:0;background:repeating-linear-gradient(0deg,transparent,transparent 3px,rgba(0,18,0,0.18) 3px,rgba(0,18,0,0.18) 4px);pointer-events:none;z-index:10}
+.dim{color:#0d5c0d}.mid{color:#1a8a1a}.bright{color:#80ff80}
+.titlebar{border-bottom:1px solid #33ff33;padding:6px 16px;display:flex;justify-content:space-between;align-items:center;background:#000}
+.titlebar-center{font-size:19px;color:#80ff80;letter-spacing:2px;text-align:center;flex:1}
+.titlebar-side{font-size:17px;color:#1a8a1a;white-space:nowrap}
+.body{display:grid;grid-template-columns:1fr 1fr;gap:0;padding:0}
+.panel{border:1px dashed #1a8a1a;padding:14px 16px;position:relative}
+.divider-h{height:1px;background:#1a8a1a;grid-column:1/-1;width:100%}
+.sec-title{font-size:17px;color:#33ff33;letter-spacing:4px;margin-bottom:2px}
+.sec-rule{color:#1a8a1a;font-size:15px;margin-bottom:10px;letter-spacing:1px}
+.term-row{margin-bottom:12px}
+.term-name{color:#80ff80;font-size:20px;letter-spacing:1px}
+.term-orig{color:#0d5c0d;font-size:16px;margin-bottom:2px}
+.term-def{color:#33ff33;font-size:16px;line-height:1.5;max-width:54ch}
+.term-ex-label{color:#0d5c0d;font-size:15px;margin-top:4px}
+.term-ex{color:#1a8a1a;font-size:15px;line-height:1.45;padding-left:2ch;border-left:1px solid #0d5c0d;max-width:50ch}
+.intro-text{color:#1a8a1a;font-size:16px;line-height:1.55;max-width:100%}
+.label-sm{color:#0d5c0d;font-size:15px;letter-spacing:2px}
+.status-row{display:flex;gap:24px;margin-top:6px}
+.stat{font-size:15px}.stat-val{color:#80ff80}
+.tag{background:#33ff33;color:#000;padding:0 6px;font-size:15px;display:inline-block}
+.fkbar{border-top:1px solid #33ff33;display:flex;background:#000;position:relative;z-index:11}
+.fk{flex:1;border-right:1px solid #33ff33;padding:6px 4px;text-align:center;font-size:15px;color:#000;background:#33ff33;letter-spacing:1px}
+.fk:last-child{border-right:none}
+.fk.dim-key{background:#0d5c0d;color:#33ff33}
+.fk.active{background:#80ff80;color:#000}
+.blink{animation:blink 1.1s step-end infinite}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:0}}
+</style>
+
+<div class="page">
+
+  <div class="titlebar">
+    <div class="titlebar-side">LEXICON@FIELDGUIDE:/CH01/CAST_OF_CHARACTERS/</div>
+    <div class="titlebar-side">[-][X]</div>
+  </div>
+
+  <div class="body">
+
+    <div class="panel" style="grid-column:1/-1;border-left:none;border-right:none;border-top:none;padding:10px 16px 8px;display:flex;justify-content:space-between;align-items:flex-start">
+      <div>
+        <div class="sec-title" style="font-size:19px">C H A P T E R &nbsp; O N E</div>
+        <div style="color:#1a8a1a;font-size:16px;letter-spacing:2px">// MAPPING THE PEOPLE AROUND YOUR WORK</div>
+      </div>
+      <div style="text-align:right">
+        <div class="label-sm">VOL I OF I &nbsp;·&nbsp; ADAPTED ED.</div>
+        <div class="status-row" style="justify-content:flex-end">
+          <div class="stat">TERMS <span class="stat-val">09</span></div>
+          <div class="stat">STATUS <span class="stat-val tag">LOADED</span></div>
+          <div class="stat">CH <span class="stat-val">01/05</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="divider-h"></div>
+
+    <div class="panel" style="grid-column:1/-1;border-left:none;border-right:none;border-top:none;padding:10px 16px 8px">
+      <div class="intro-text">Before you can connect your work with anyone, it helps to have a shared language for describing who those people are and where they stand. The terms below are a way of sorting — not of ranking people's worth, but of understanding how much common ground already exists between you and someone else. The closer the fit, the less explaining you have to do.</div>
+    </div>
+
+    <div class="divider-h"></div>
+
+    <div class="panel" style="border-left:none;border-top:none;border-bottom:none">
+      <div class="sec-title" style="margin-bottom:6px">T E R M S &nbsp; 01 – 05</div>
+      <div class="sec-rule">* * * * * * * * * * * * * * * * * * * * * * * * * *</div>
+
+      <div class="term-row">
+        <div class="term-name">Contact</div>
+        <div class="term-orig">// Lead</div>
+        <div class="term-def">Anyone who has crossed paths with your work — a form fill, a reply, a handshake. The raw starting point of any list.</div>
+        <div class="term-ex-label">[+] EXAMPLE (digital product)</div>
+        <div class="term-ex">Someone who signed up for your newsletter after finding a free article through search. Interest shown; fit unknown.</div>
+      </div>
+
+      <div class="term-row">
+        <div class="term-name">Unknown Contact</div>
+        <div class="term-orig">// Cold Lead</div>
+        <div class="term-def">Someone who hasn't encountered your work yet. You're introducing yourself from scratch — no prior signal, no shared context.</div>
+        <div class="term-ex-label">[+] EXAMPLE (consulting)</div>
+        <div class="term-ex">A company you've identified as a strong fit, whose operations lead has no idea you exist.</div>
+      </div>
+
+      <div class="term-row">
+        <div class="term-name">Already-Curious Contact</div>
+        <div class="term-orig">// Warm Lead</div>
+        <div class="term-def">Someone who showed genuine interest on their own — visited, downloaded, was pointed your way. There's already a thread to pull.</div>
+        <div class="term-ex-label">[+] EXAMPLE (1-on-1 work)</div>
+        <div class="term-ex">Someone following your work for months who finally replied asking how your process works.</div>
+      </div>
+
+      <div class="term-row">
+        <div class="term-name">Relationship Contact</div>
+        <div class="term-orig">// Friendly Informal</div>
+        <div class="term-def">Someone warm through relationship rather than marketing — a former collaborator, a friend of a friend. The warmth is personal, not earned through output.</div>
+        <div class="term-ex-label">[+] EXAMPLE (design / build)</div>
+        <div class="term-ex">A past client's co-founder who saw your work up close and now has their own product to build.</div>
+      </div>
+
+      <div class="term-row">
+        <div class="term-name">Good-Fit Contact</div>
+        <div class="term-orig">// Qualified Lead</div>
+        <div class="term-def">Someone who, looking at what they need and what you do, lines up well. Right context, right problem, right circumstances. The filter that matters most.</div>
+        <div class="term-ex-label">[+] EXAMPLE (consulting)</div>
+        <div class="term-ex">A company with a specific operational challenge you've solved before and a decision-maker actively looking for help.</div>
+      </div>
+    </div>
+
+    <div class="panel" style="border-right:none;border-top:none;border-bottom:none">
+      <div class="sec-title" style="margin-bottom:6px">T E R M S &nbsp; 06 – 09</div>
+      <div class="sec-rule">* * * * * * * * * * * * * * * * * * * * * * * * * *</div>
+
+      <div class="term-row">
+        <div class="term-name">Someone You're Exploring With</div>
+        <div class="term-orig">// Prospect</div>
+        <div class="term-def">A good-fit contact now in real conversation. You're figuring out whether there's something real here. Not a commitment yet — but no longer just a name.</div>
+        <div class="term-ex-label">[+] EXAMPLE (1-on-1 work)</div>
+        <div class="term-ex">Someone you had an introductory call with who asked to speak again next week.</div>
+      </div>
+
+      <div class="term-row">
+        <div class="term-name">Your Ideal Person</div>
+        <div class="term-orig">// ICP — Ideal Collaborator Profile</div>
+        <div class="term-def">A clear picture of the person who gets the most from what you do — their situation, their problem, how they think. Not about exclusion; about knowing who you're actually for.</div>
+        <div class="term-ex-label">[+] EXAMPLE (digital product)</div>
+        <div class="term-ex">"Professionals who are good at what they do but have never had to think about how to position or communicate it."</div>
+      </div>
+
+      <div class="term-row">
+        <div class="term-name">Where Someone Is With Your Work</div>
+        <div class="term-orig">// Lifecycle Stage</div>
+        <div class="term-def">Where someone sits in their arc with you — just discovered, following along, worked with you once, or now referring others. Knowing the stage helps you respond appropriately.</div>
+        <div class="term-ex-label">[+] EXAMPLE (design / build)</div>
+        <div class="term-ex">A past client referring others is at a completely different stage than a first-time portfolio visitor — and needs a different conversation, if any.</div>
+      </div>
+
+      <div class="term-row">
+        <div class="term-name">A Group You Learn From Together</div>
+        <div class="term-orig">// Cohort</div>
+        <div class="term-def">People who arrived at the same time or through the same path. Looking at them together reveals patterns — what they need, how they engage. Not for labeling; for learning.</div>
+        <div class="term-ex-label">[+] EXAMPLE (consulting)</div>
+        <div class="term-ex">Comparing year-one clients with year-three clients reveals how your ideal engagement has shifted and what kinds of work you do best.</div>
+      </div>
+
+      <div style="margin-top:14px;border-top:1px dashed #0d5c0d;padding-top:12px">
+        <div class="label-sm" style="margin-bottom:6px">// SYSTEM LOG</div>
+        <div style="color:#0d5c0d;font-size:15px;line-height:1.7">
+          [+] CHAPTER 01 — LOADED SUCCESSFULLY<br>
+          [+] TERMS PARSED: 09 OF 09<br>
+          [+] EXAMPLES INDEXED: 09 OF 09<br>
+          [+] SERVICE TYPES COVERED: 04 OF 04<br>
+          [+] NEXT MODULE: CH02 — HOW PEOPLE FIND YOU<br>
+          [&nbsp;] AWAITING INPUT<span class="blink">_</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="fkbar">
+    <div class="fk dim-key">F1 — HELP</div>
+    <div class="fk dim-key">F2 — ALL TERMS</div>
+    <div class="fk active">F3 — CHAPTER 01</div>
+    <div class="fk dim-key">F4 — CHAPTER 02</div>
+    <div class="fk dim-key">F5 — CHAPTER 03</div>
+    <div class="fk dim-key">F6 — CHAPTER 04</div>
+    <div class="fk dim-key">F7 — CHAPTER 05</div>
+    <div class="fk dim-key">F10 — EXIT</div>
+  </div>
+
+</div>
