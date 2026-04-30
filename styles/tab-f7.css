@@ -1,0 +1,32 @@
+*{box-sizing:border-box;margin:0;padding:0}
+.page{background:#000;color:#FF00FF;font-family:'VT323','Courier New',monospace;width:816px;min-height:1056px;position:relative;overflow:hidden}
+.page::after{content:'';position:absolute;inset:0;background:repeating-linear-gradient(0deg,transparent,transparent 3px,rgba(15,0,15,0.2) 3px,rgba(15,0,15,0.2) 4px);pointer-events:none;z-index:10}
+.titlebar{border-bottom:1px solid #FF00FF;padding:5px 16px;display:flex;justify-content:space-between;background:#000}
+.ts{font-size:16px;color:#880088}
+.body{display:grid;grid-template-columns:1fr 1fr;gap:0}
+.ph{grid-column:1/-1;padding:8px 16px;border-bottom:1px dashed #880088}
+.col{padding:12px 14px;border-right:1px dashed #880088}
+.col:last-child{border-right:none}
+.ch-title{font-size:20px;color:#FF80FF;letter-spacing:4px}
+.ch-sub{color:#880088;font-size:15px;letter-spacing:2px}
+.intro{color:#880088;font-size:15px;line-height:1.45}
+.sr{color:#440044;font-size:14px;margin-bottom:8px}
+.st{color:#FF00FF;font-size:15px;letter-spacing:3px;margin-bottom:4px}
+.tr{margin-bottom:14px;padding-bottom:14px;border-bottom:1px dashed #280028}
+.tr:last-child{border-bottom:none;margin-bottom:0}
+.tn{color:#FF80FF;font-size:18px;line-height:1.2}
+.to{color:#440044;font-size:14px}
+.td{color:#FF00FF;font-size:16px;line-height:1.5}
+.tel{color:#440044;font-size:15px;margin-top:4px}
+.te{color:#880088;font-size:15px;line-height:1.4;padding-left:1.5ch;border-left:1px solid #440044}
+.stat{font-size:14px;color:#FF00FF}.sv{color:#FF80FF}
+.tag{background:#FF00FF;color:#000;padding:0 5px;font-size:14px}
+.syslog{color:#440044;font-size:14px;line-height:1.7;margin-top:12px;padding-top:12px;border-top:1px dashed #280028}
+.closing{color:#880088;font-size:15px;line-height:1.6;margin-top:16px;padding-top:12px;border-top:1px dashed #440044}
+.blink{animation:bl 1.1s step-end infinite}
+@keyframes bl{0%,100%{opacity:1}50%{opacity:0}}
+.fkbar{border-top:1px solid #FF00FF;display:flex;background:#000;z-index:11}
+.fk{flex:1;border-right:1px solid #FF00FF;padding:5px 2px;text-align:center;font-size:13px;letter-spacing:1px;font-family:'VT323','Courier New',monospace;cursor:pointer}
+.fk:last-child{border-right:none}
+.dk{background:#280028;color:#FF00FF}
+.ak{background:#FF80FF;color:#000}

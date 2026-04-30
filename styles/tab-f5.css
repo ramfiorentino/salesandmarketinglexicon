@@ -1,0 +1,31 @@
+*{box-sizing:border-box;margin:0;padding:0}
+.page{background:#000;color:#5555FF;font-family:'VT323','Courier New',monospace;width:816px;min-height:1056px;position:relative;overflow:hidden}
+.page::after{content:'';position:absolute;inset:0;background:repeating-linear-gradient(0deg,transparent,transparent 3px,rgba(0,0,15,0.2) 3px,rgba(0,0,15,0.2) 4px);pointer-events:none;z-index:10}
+.titlebar{border-bottom:1px solid #5555FF;padding:5px 16px;display:flex;justify-content:space-between;background:#000}
+.ts{font-size:16px;color:#2222AA}
+.body{display:grid;grid-template-columns:1fr 1fr;gap:0}
+.ph{grid-column:1/-1;padding:8px 16px;border-bottom:1px dashed #2222AA}
+.col{padding:10px 14px;border-right:1px dashed #2222AA}
+.col:last-child{border-right:none}
+.ch-title{font-size:20px;color:#9999FF;letter-spacing:4px}
+.ch-sub{color:#2222AA;font-size:15px;letter-spacing:2px}
+.intro{color:#2222AA;font-size:15px;line-height:1.45}
+.sr{color:#11115C;font-size:14px;margin-bottom:8px}
+.st{color:#5555FF;font-size:15px;letter-spacing:3px;margin-bottom:4px}
+.tr{margin-bottom:9px;padding-bottom:9px;border-bottom:1px dashed #0a0a30}
+.tr:last-child{border-bottom:none;margin-bottom:0}
+.tn{color:#9999FF;font-size:18px;line-height:1.2}
+.to{color:#11115C;font-size:14px}
+.td{color:#5555FF;font-size:15px;line-height:1.4}
+.tel{color:#11115C;font-size:13px;margin-top:2px}
+.te{color:#2222AA;font-size:13px;line-height:1.35;padding-left:1.5ch;border-left:1px solid #11115C}
+.stat{font-size:14px;color:#5555FF}.sv{color:#9999FF}
+.tag{background:#5555FF;color:#000;padding:0 5px;font-size:14px}
+.syslog{color:#11115C;font-size:13px;line-height:1.6;margin-top:8px;padding-top:8px;border-top:1px dashed #0a0a30}
+.blink{animation:bl 1.1s step-end infinite}
+@keyframes bl{0%,100%{opacity:1}50%{opacity:0}}
+.fkbar{border-top:1px solid #5555FF;display:flex;background:#000;z-index:11}
+.fk{flex:1;border-right:1px solid #5555FF;padding:5px 2px;text-align:center;font-size:13px;letter-spacing:1px;font-family:'VT323','Courier New',monospace;cursor:pointer}
+.fk:last-child{border-right:none}
+.dk{background:#11115C;color:#5555FF}
+.ak{background:#9999FF;color:#000}
