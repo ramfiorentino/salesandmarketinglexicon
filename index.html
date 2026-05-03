@@ -6,16 +6,10 @@
 <title>Sales &amp; Marketing Lexicon 2026</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
-<link id="tab-style" rel="stylesheet" href="styles/tab-idx.css">
-<style>
-html,body{margin:0;padding:0;background:#000}
-body{display:flex;flex-direction:column;align-items:center}
-#app{width:816px}
-.tab-panel{display:none}
-</style>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div id="app">
+<div id="app" data-tab="idx">
 
 <!-- ═══ SHARED TAB BAR ═══ -->
 <div class="fkbar">
@@ -679,7 +673,7 @@ body{display:flex;flex-direction:column;align-items:center}
 
 <script>
 function switchTab(id) {
-  document.getElementById('tab-style').href = 'styles/tab-' + id + '.css';
+  document.getElementById('app').dataset.tab = id;
   document.querySelectorAll('.tab-panel').forEach(function(p) {
     p.style.display = p.dataset.tab === id ? 'block' : 'none';
   });
